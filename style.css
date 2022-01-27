@@ -45,10 +45,12 @@
     align-items: center;
     background-color: rgb(134, 202, 197);
     color: rgb(0, 0, 0);
-    position: fixed;
+    position: fixed;    /*Comment this line if you don't want navbar fixed on the top of view-port*/
     top: 0;
     width: 100%;
     overflow:hidden;
+    z-index:1;
+    
 }
 
 .header + .main{
@@ -309,7 +311,9 @@
     justify-content:center;
     margin:5.0rem auto 5.0rem 10.0rem;
     display:flex;
-    font-size:1.5rem
+    font-size:1.5rem;
+    z-index:0;
+       
 }
 
 .fab fa-js{
